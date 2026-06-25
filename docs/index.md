@@ -28,6 +28,6 @@
 
 ---
 
-> Add your description here
+> A simple package that contains overrides for pyrig-runtime.
 
 ---

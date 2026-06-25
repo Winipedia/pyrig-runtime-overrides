@@ -1,7 +1,7 @@
 {
     "repository": {
         "name": "pyrig-runtime-overrides",
-        "description": "Add your description here",
+        "description": "A simple package that contains overrides for pyrig-runtime.",
         "default_branch": "main",
         "delete_branch_on_merge": true,
         "allow_update_branch": true,
