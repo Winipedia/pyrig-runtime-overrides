@@ -1001,7 +1001,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pyrig-runtime" }]
+requires-dist = [{ name = "pyrig-runtime", specifier = ">=0.3.0" }]
 
 [package.metadata.requires-dev]
 dev = [
