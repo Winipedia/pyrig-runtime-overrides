@@ -903,7 +903,7 @@ wheels = [
 
 [[package]]
 name = "pyrig"
-version = "15.25.0"
+version = "15.26.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "inquirerpy" },
@@ -914,9 +914,9 @@ dependencies = [
     { name = "tomlkit" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cb/13/a467c67814ae46f6bd91f804ad338d5309b204d49c150c4f56726139778e/pyrig-15.25.0.tar.gz", hash = "sha256:a1ea624186d4917987d0026933cfd6237ed829f4b3242dd0c94fdbdbd5bfa23e", size = 101848, upload-time = "2026-06-25T04:30:00.003Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/17/de/19cb7fd893551d83b7a8a362c46591187a3df3d55812429299c4abc7de91/pyrig-15.26.0.tar.gz", hash = "sha256:765353c9375af5115995d2b44eb88714a8123f2e1ff0844c9ad33673123f095a", size = 102041, upload-time = "2026-06-25T05:08:26.864Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d5/4e/0d0a0c3de13a2ffad50d494eb750d7a40b04add200d10f8c8fa88d7175e0/pyrig-15.25.0-py3-none-any.whl", hash = "sha256:d05f84190e9138c9676b7c9261eebfe814c36bbd6e56a606ffa9365353876342", size = 152026, upload-time = "2026-06-25T04:29:58.598Z" },
+    { url = "https://files.pythonhosted.org/packages/25/48/069d508ebc148a938e3af6f603a1a2c233ea01a0678bb917fba516015507/pyrig-15.26.0-py3-none-any.whl", hash = "sha256:5fae10a2273802502bc35d881920366893f17f18e56d75f90331507bdc865570", size = 152120, upload-time = "2026-06-25T05:08:25.289Z" },
 ]
 
 [[package]]
@@ -975,6 +975,8 @@ name = "pyrig-runtime-overrides"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "pyrig" },
+    { name = "pyrig-pypi" },
     { name = "pyrig-runtime" },
 ]
 
@@ -1001,7 +1003,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pyrig-runtime", specifier = ">=0.3.0" }]
+requires-dist = [
+    { name = "pyrig", specifier = ">=15.26.0" },
+    { name = "pyrig-pypi", specifier = ">=1.13.0" },
+    { name = "pyrig-runtime", specifier = ">=0.3.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [

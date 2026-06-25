@@ -5,7 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pyrig-runtime>=0.3.0",
+    "pyrig>=15.26.0",
+    "pyrig-pypi>=1.13.0",
 ]
 license = "MIT"
 license-files = [
