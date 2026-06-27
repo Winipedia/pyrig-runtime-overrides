@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-runtime-overrides"
-version = "0.6.0"
+version = "0.11.0"
 description = "A simple package that contains overrides for pyrig-runtime."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -54,7 +54,6 @@ dev = [
     "prek>=0.4.5",
     "pyrig>=15.25.0",
     "pyrig-codecov>=1.10.0",
-    "pyrig-fixtures>=0.11.0",
     "pyrig-pypi>=1.13.0",
     "pytest>=9.1.1",
     "pytest-cov>=7.1.0",
