@@ -31,3 +31,30 @@
 > A simple package that contains overrides for pyrig-runtime.
 
 ---
+
+## Overview
+
+pyrig-runtime-overrides carries the project overrides applied to
+[pyrig-runtime](https://github.com/Winipedia/pyrig-runtime)'s own repository. It
+is a maintenance package for pyrig-runtime itself — not a general-purpose
+plugin — added as a development dependency to the pyrig-runtime project.
+
+## Installation
+
+```bash
+uv add pyrig-runtime-overrides --dev
+uv run pyrig sync
+```
+
+## How it works
+
+The package overrides one pyrig class:
+
+- **Dependencies** — removes `pyrig-runtime` from the dependencies the base
+  configuration would otherwise add to `pyproject.toml`, avoiding a circular
+  dependency, since pyrig-runtime cannot depend on itself.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

@@ -31,3 +31,20 @@
 > A simple package that contains overrides for pyrig-runtime.
 
 ---
+
+## Overview
+
+pyrig-runtime-overrides carries the project overrides applied to
+[pyrig-runtime](https://github.com/Winipedia/pyrig-runtime)'s own repository. It
+is a maintenance package for pyrig-runtime itself, not a general-purpose plugin
+for your projects.
+
+## What it overrides
+
+- **Dependencies** — drops `pyrig-runtime` from the dependencies pyrig would
+  otherwise add, since pyrig-runtime cannot depend on itself.
+
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available on
+the [documentation site](https://Winipedia.github.io/pyrig-runtime-overrides).
