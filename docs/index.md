@@ -1,4 +1,4 @@
-# pyrig-runtime-overrides Documentation
+# Home
 
 <!-- ci/cd -->
 [![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-runtime-overrides/health_check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-runtime-overrides/actions/workflows/health_check.yml)
