@@ -1,1 +1,1 @@
-"""Project-specific overrides to pyrig's scaffolding and maintenance layer."""
+"""Mirrored overrides for pyrig-runtime's configuration and tool definitions."""

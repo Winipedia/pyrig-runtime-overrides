@@ -1,1 +1,1 @@
-"""Overrides for the project configuration pyrig generates by default."""
+"""Overrides for pyrig-runtime's own configuration and tooling."""
