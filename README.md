@@ -51,11 +51,6 @@ pyrig-runtime-overrides carries the project overrides applied to
 is a maintenance package for pyrig-runtime itself, not a general-purpose plugin
 for your projects.
 
-## What it overrides
-
-- **Dependencies** — drops `pyrig-runtime` from the dependencies pyrig would
-  otherwise add, since pyrig-runtime cannot depend on itself.
-
 ## Documentation
 
 Full documentation, including the auto-generated API reference, is available on

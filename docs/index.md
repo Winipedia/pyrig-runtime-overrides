@@ -62,7 +62,7 @@ uv run pyrig sync
 
 The package overrides one pyrig class:
 
-- **Dependencies** — removes `pyrig-runtime` from the dependencies the base
+- **Pyrigger** — removes `pyrig-runtime` from the runtime dependencies the base
   configuration would otherwise add to `pyproject.toml`, avoiding a circular
   dependency, since pyrig-runtime cannot depend on itself.
 
