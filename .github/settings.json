@@ -2,6 +2,7 @@
   "repository": {
     "name": "pyrig-runtime-overrides",
     "description": "A simple package that contains overrides for pyrig-runtime.",
+    "homepage": "https://Winipedia.github.io/pyrig-runtime-overrides",
     "default_branch": "main",
     "delete_branch_on_merge": true,
     "allow_update_branch": true,
