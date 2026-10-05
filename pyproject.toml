@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-runtime-overrides"
-version = "2.15.13"
+version = "2.15.14"
 description = "A simple package that contains overrides for pyrig-runtime."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -140,3 +140,7 @@ select = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.ryl.rules]
+ALL = "enable"
+key-ordering = "disable"

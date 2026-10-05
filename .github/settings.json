@@ -1,4 +1,7 @@
 {
+  "fork_pr_contributor_approval": {
+    "approval_policy": "all_external_contributors"
+  },
   "repository": {
     "name": "pyrig-runtime-overrides",
     "description": "A simple package that contains overrides for pyrig-runtime.",
@@ -122,8 +125,5 @@
     "pyrig-runtime",
     "python-cli",
     "subclass-discovery"
-  ],
-  "fork_pr_contributor_approval": {
-    "approval_policy": "all_external_contributors"
-  }
+  ]
 }
