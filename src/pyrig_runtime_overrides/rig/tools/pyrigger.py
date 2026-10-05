@@ -1,16 +1,19 @@
 """Override the tool wrapper for the pyrig CLI itself."""
 
+import typer
 from pyrig.rig.tools.pyrigger import Pyrigger as BasePyrigger
+from pyrig_runtime.core.strings import snake_to_kebab_case
 
 
 class Pyrigger(BasePyrigger):
     """Override for the pyrig CLI tool."""
 
-    def runtime_dependencies(self) -> list[str]:
-        """Override the runtime dependencies to remove pyrig-runtime.
+    def runtime_dependency(self) -> str:
+        """Replace pyrig-runtime with typer as the runtime dependency.
 
-        This is necessary because pyrig-runtime cannot depend on itself.
+        pyrig-runtime cannot depend on itself, but its CLI is built with typer.
+
+        Returns:
+            The `typer` distribution name.
         """
-        dependencies = super().runtime_dependencies()
-        dependencies.remove(Pyrigger.I.runtime_dependency())
-        return dependencies
+        return snake_to_kebab_case(typer.__name__)
