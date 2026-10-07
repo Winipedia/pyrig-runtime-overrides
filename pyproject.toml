@@ -102,7 +102,6 @@ root = "src"
 [tool.deptry.per_rule_ignores]
 DEP002 = [
   "typer",
-  "pyrig",
 ]
 
 [tool.pytest]

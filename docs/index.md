@@ -66,9 +66,8 @@ The package customizes pyrig classes:
 
 - **PyprojectConfigFile** — adds pyrig-runtime-specific PyPI classifiers and
   keywords to the generated `pyproject.toml`.
-- **Pyrigger** — declares `typer` instead of `pyrig-runtime` as a runtime
-  dependency in the generated `pyproject.toml`, avoiding a circular dependency
-  because pyrig-runtime cannot depend on itself.
+- **Pyrigger** — declares `typer` as a runtime dependency in the generated
+  `pyproject.toml`, avoiding a circular dependency on pyrig-runtime itself.
 
 ## API Reference
 

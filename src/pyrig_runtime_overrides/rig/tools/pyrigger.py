@@ -8,12 +8,12 @@ from pyrig_runtime.core.strings import snake_to_kebab_case
 class Pyrigger(BasePyrigger):
     """Override for the pyrig CLI tool."""
 
-    def runtime_dependency(self) -> str:
-        """Replace pyrig-runtime with typer as the runtime dependency.
+    def runtime_dependencies(self) -> tuple[str, ...]:
+        """Override the default runtime dependencies.
 
         pyrig-runtime cannot depend on itself, but its CLI is built with typer.
 
         Returns:
-            The `typer` distribution name.
+            A tuple containing only the `typer` distribution name.
         """
-        return snake_to_kebab_case(typer.__name__)
+        return (snake_to_kebab_case(typer.__name__),)
