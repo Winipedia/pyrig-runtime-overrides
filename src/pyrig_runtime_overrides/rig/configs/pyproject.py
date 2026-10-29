@@ -1,5 +1,7 @@
 """PyPI metadata overrides for pyrig-runtime's generated project configuration."""
 
+from typing import override
+
 from pyrig_pypi.rig.configs.pyproject import (
     PyprojectConfigFile as BasePyprojectConfigFile,
 )
@@ -12,6 +14,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
     shared metadata.
     """
 
+    @override
     def classifiers_configs(self) -> list[str]:
         """Return the base trove classifiers plus pyrig-runtime-specific classifiers."""
         return [
@@ -23,6 +26,7 @@ class PyprojectConfigFile(BasePyprojectConfigFile):
             "Topic :: Software Development :: Libraries :: Python Modules",
         ]
 
+    @override
     def keywords_configs(self) -> list[str]:
         """Return the base keywords plus pyrig-runtime-specific PyPI search terms."""
         return [

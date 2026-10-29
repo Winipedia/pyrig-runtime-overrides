@@ -1,5 +1,7 @@
 """Override the tool wrapper for the pyrig CLI itself."""
 
+from typing import override
+
 import typer
 from pyrig.rig.tools.pyrigger import Pyrigger as BasePyrigger
 from pyrig_runtime.core.strings import snake_to_kebab_case
@@ -8,6 +10,7 @@ from pyrig_runtime.core.strings import snake_to_kebab_case
 class Pyrigger(BasePyrigger):
     """Override for the pyrig CLI tool."""
 
+    @override
     def runtime_dependencies(self) -> tuple[str, ...]:
         """Override the default runtime dependencies.
 
